@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#58FAAC">
+
+    <TextView
+        android:text="Llamadas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/llamadasBTN"
+        android:textSize="28sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="39dp"
+        android:id="@+id/marcar_numero"
+        android:hint="Numero de Telefono"
+        android:layout_below="@+id/llamadasBTN"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Mostrar y Marcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mostrarymarcar"
+        android:textAllCaps="false"
+        android:layout_below="@+id/marcar_numero"
+        android:layout_alignRight="@+id/llamadasBTN"
+        android:layout_alignEnd="@+id/llamadasBTN"
+        android:layout_marginTop="18dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/stat_sys_phone_call"
+        android:id="@+id/llamarIBTN"
+        android:layout_alignTop="@+id/mostrarymarcar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+</RelativeLayout>
